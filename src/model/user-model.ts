@@ -14,6 +14,11 @@ export type TCreateUserRequest = {
   password: string;
 };
 
+export type TLoginUserRequest = {
+  username: string;
+  name: string;
+  password: string;
+};
 
 //helper
 export function toUserResponse(user: User): TUserResponse {
