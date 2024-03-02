@@ -20,6 +20,11 @@ export type TLoginUserRequest = {
   password: string;
 };
 
+export type TUpdateUserRequest = {
+  name?: string;
+  password?: string;
+};
+
 //helper
 export function toUserResponse(user: User): TUserResponse {
   return {
